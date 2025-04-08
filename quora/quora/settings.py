@@ -53,6 +53,9 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'quora.urls'
 
+LOGIN_REDIRECT_URL = 'home'  # Add this line
+LOGOUT_REDIRECT_URL = 'home'  # Add this line
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
